@@ -13,12 +13,5 @@ function App(props) {
 }
 export default App;
 
-// export default connect(
-//   state => ({
-//       lastname:state.addName,
-//       lastage:state.addAge
-//   }),
-//   {increaseCreater,decreaseCreater}
-// )(CounterGroup)
 
 
