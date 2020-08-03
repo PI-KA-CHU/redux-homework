@@ -1,16 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CounterGroup from './component/CounterGroup';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
-        <CounterGroup/>
+        <CounterGroup store = {props.store}/>
       </header>
     </div>
   );
 }
-
 export default App;
+
+// export default connect(
+//   state => ({
+//       lastname:state.addName,
+//       lastage:state.addAge
+//   }),
+//   {increaseCreater,decreaseCreater}
+// )(CounterGroup)
+
+
